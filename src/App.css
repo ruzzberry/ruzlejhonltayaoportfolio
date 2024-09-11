@@ -1,38 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  position: fixed;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*background-image: url("./bg/blackwallpaperwater.jpg");*/
+  background-color: #222831;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;  
+
+  height: 100dvh;
+  width: 60dvh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.Container{
+  background-color: #31363F;
+  height: 95dvh;
+  width: 55dvh;
+  border-radius: 10px;
+  color: #76ABAE;
+
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.For-icon{
+  height: fit-content;
+  width: inherit;
+}
+
+.For-icon .Formalpic{
+  border-radius: 50%;
+  height: 12.5rem;
+  width: 12.5rem;
+  margin-top: 4rem;
+}
+
+.For-content{
+  margin-top: 20px;
+}
+
+.For-socialbuttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.Socmedicons{
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  transition: transform 0.3s ease;
+}
+
+.Socmedicons:hover{
+  transform: scale(1.2);
+}
+
+.downloadCV {
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 3rem;
+  outline: none;
+  border: none;
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  outline: none;
+}
+
+.downloadCV:hover {
+  background-color: grey;
+
 }
