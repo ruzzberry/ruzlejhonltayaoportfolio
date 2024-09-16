@@ -4,13 +4,15 @@ import formalpic from './bg/formalpicblack.jpg';
 import facebookicon from './icons/1.png';
 import gmailicon from './icons/2.png';
 import linkedin from './icons/3.png';
+import 'animate.css';
 //import BodyComponent from './components/body';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="Container">
+    <body className='body'>
+      <div className="App">
+      <header className="App-header animate__animated animate__fadeInLeft">
+        <div className="Container" >
           <div className='For-icon'>
             <img src={formalpic} alt="Ruzle Tayao" className='Formalpic'/>
           </div>
@@ -48,8 +50,36 @@ function App() {
         </div>
       </header>
 
-      <div className='contentsContainer'>Ruzle</div>
+      <div className='contentsContainer'>
+        <div className='headerCard animate__animated animate__fadeInDown'>
+          <h1>Hi! I'am Ruzle Tayao</h1>
+          <p>
+            I’m a versatile software engineer specializing in web development and a software QA. Through hands-on experience and project work, I’ve developed a unique blend of coding and testing expertise, allowing me to deliver robust, high-quality solutions.        
+          </p>
+
+          <h3 className='educationalBg'>EDUCATIONAL BACKGROUND</h3>
+        </div>
+
+        <div className='navBar animate__animated animate__fadeInUp'>
+          ABOUT ME TECH STACK PROJECT
+        </div>
+
+        <div className='technicalCard animate__animated animate__fadeInRight'>
+          <h1>MY TECHNICAL STACKS</h1>
+          <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>  
+
+        <div className='projectCard animate__animated animate__fadeInRight'>
+          <h1>PROJECTS</h1>
+          <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>  
+      </div>
     </div>
+    </body>
   );
 }
 

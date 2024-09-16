@@ -5,6 +5,11 @@
   
 }
 
+.body{
+  height: 100%; /* Allow full height scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .divider {
   border-top: 1px solid #ccc;
   margin: 20px 0;
@@ -12,6 +17,9 @@
 
 
 .App {
+  height: 100%; /* Allow full height scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -27,6 +35,8 @@
   background-size: cover;
   background-repeat: repeat;
   background-position: center;  
+  position: fixed;
+  z-index: 1001;
 
   height: 100dvh;
   width: 60dvh;
