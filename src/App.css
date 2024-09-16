@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 .divider {
@@ -11,8 +12,13 @@
 
 
 .App {
+  display: flex;
+  flex-direction: row;
   text-align: center;
   position: fixed;
+  background-color: #222831;
+  width: 100%;
+  align-content: center;
 }
 
 .App-header {

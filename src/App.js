@@ -1,8 +1,10 @@
 import './App.css';
-import formalpic from './bg/formalpicblack.jpg'
-import facebookicon from './icons/1.png'
-import gmailicon from './icons/2.png'
-import linkedin from './icons/3.png'
+import './BodyContents.css';
+import formalpic from './bg/formalpicblack.jpg';
+import facebookicon from './icons/1.png';
+import gmailicon from './icons/2.png';
+import linkedin from './icons/3.png';
+//import BodyComponent from './components/body';
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
           </div>
         </div>
       </header>
+
+      <div className='contentsContainer'>Ruzle</div>
     </div>
   );
 }
